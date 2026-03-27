@@ -7,3 +7,4 @@ uvicorn
 python-dotenv
 chromadb
 tiktoken
+pypdf
