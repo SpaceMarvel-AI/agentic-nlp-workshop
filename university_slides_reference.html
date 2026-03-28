@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>University Slides Reference — Agentic NLP Workshop</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; background: #f5f5f5; color: #1a1a1a; padding: 2rem 1rem; }
+  .wrap { max-width: 900px; margin: 0 auto; }
+
+  .top { background: #085041; border-radius: 12px; padding: 16px 22px; margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: space-between; }
+  .top-title { color: #E1F5EE; font-size: 17px; font-weight: 600; }
+  .top-sub { color: #9FE1CB; font-size: 12px; margin-top: 4px; }
+  .badge { background: #1D9E75; color: #E1F5EE; font-size: 10px; font-weight: 600; padding: 4px 12px; border-radius: 20px; white-space: nowrap; }
+
+  .section { margin-bottom: 1.6rem; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+  .session-num { width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; flex-shrink: 0; color: #fff; }
+  .section-title { font-size: 15px; font-weight: 600; color: #1a1a1a; }
+  .section-sub { font-size: 12px; color: #666; margin-top: 2px; }
+
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+
+  .card { background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 13px 15px; text-decoration: none; display: block; transition: border-color 0.15s, box-shadow 0.15s; }
+  .card:hover { border-color: #1D9E75; box-shadow: 0 2px 8px rgba(29,158,117,0.12); }
+  .card-top { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; }
+  .uni-badge { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; white-space: nowrap; }
+  .card-year { font-size: 10px; color: #888; }
+  .card-title { font-size: 13px; font-weight: 600; color: #111; line-height: 1.4; margin-bottom: 5px; }
+  .card-desc { font-size: 11.5px; color: #555; line-height: 1.55; }
+  .card-url { font-size: 10px; color: #1D9E75; margin-top: 7px; font-family: "Courier New", monospace; word-break: break-all; }
+
+  .divider { height: 1px; background: #e8e8e8; margin: 1.4rem 0; }
+
+  .note { background: #f0faf6; border-radius: 8px; padding: 12px 16px; font-size: 12px; color: #444; margin-top: 1.2rem; border-left: 3px solid #1D9E75; line-height: 1.6; }
+  .note strong { color: #085041; }
+
+  .cheat-table { width: 100%; border-collapse: collapse; margin-top: 1.2rem; font-size: 12px; border-radius: 10px; overflow: hidden; }
+  .cheat-table th { background: #085041; color: #E1F5EE; text-align: left; padding: 9px 14px; font-weight: 600; }
+  .cheat-table td { padding: 8px 14px; border-bottom: 1px solid #e8e8e8; vertical-align: top; }
+  .cheat-table tr:last-child td { border-bottom: none; }
+  .cheat-table tr:nth-child(even) td { background: #f9f9f9; }
+  .cheat-table td:first-child { font-weight: 500; color: #085041; white-space: nowrap; }
+
+  h2.cheat-heading { font-size: 14px; font-weight: 600; color: #085041; margin: 1.6rem 0 0.6rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <div>
+      <div class="top-title">Top University Slides — Agentic NLP Workshop</div>
+      <div class="top-sub">CMU 11-711 · Stanford CS224N/G · UC Berkeley · All publicly free</div>
+    </div>
+    <span class="badge">28 March 2026</span>
+  </div>
+
+  <!-- KICKOFF -->
+  <div class="section">
+    <div class="section-header">
+      <div class="session-num" style="background:#085041">00</div>
+      <div>
+        <div class="section-title">Kickoff — What is NLP? What are Agents?</div>
+        <div class="section-sub">9:00–9:15 AM · Big picture framing</div>
+      </div>
+    </div>
+    <div class="cards">
+      <a class="card" href="https://cmu-l3.github.io/anlp-spring2025/static_files/anlp-s2025-01-intro.pdf" target="_blank">
+        <div class="card-top"><span class="uni-badge" style="background:#E1F5EE;color:#085041">CMU 11-711</span><span class="card-year">Spring 2025</span></div>
+        <div class="card-title">Introduction to Advanced NLP</div>
+        <div class="card-desc">What is NLP? Language models, generation, bridging language and action. Shows DeepSeek, OpenHands, OpenScholar as modern examples.</div>
+        <div class="card-url">anlp-s2025-01-intro.pdf</div>
+      </a>
+      <a class="card" href="https://cmu-l3.github.io/anlp-spring2025/static_files/anlp-s2025-14-agents.pdf" target="_blank">
+        <div class="card-top"><span class="uni-badge" style="background:#E1F5EE;color:#085041">CMU 11-711</span><span class="card-year">Spring 2025 ✓ fetched</span></div>
+        <div class="card-title">Agents — Full Lecture</div>
+        <div class="card-desc">What is an agent? Policy + environment. LLM agents vs rule-based. ReAct, computer-use, VLM agents. Code links included.</div>
+        <div class="card-url">anlp-s2025-14-agents.pdf</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SESSION 1 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="session-num" style="background:#0F6E56">01</div>
+      <div>
+        <div class="section-title">Session 1 — LLMs, Prompt Engineering & RAG</div>
+        <div class="section-sub">9:30–11:00 AM · Core foundations</div>
+      </div>
+    </div>
+    <div class="cards">
+      <a class="card" href="https://cmu-l3.github.io/anlp-spring2025/static_files/anlp-s2025-08-prompting.pdf" target="_blank">
+        <div class="card-top"><span class="uni-badge" style="background:#E1F5EE;color:#085041">CMU 11-711</span><span class="card-year">Spring 2025</span></div>
+        <div class="card-title">Prompting — Zero-shot, Few-shot, Instruction Tuning</div>
+        <div class="card-desc">Covers prompting methods systematically: zero-shot, few-shot, chain-of-thought, instruction finetuning, RLHF overview.</div>
+        <div class="card-url">anlp-s2025-08-prompting.pdf</div>
+      </a>
+      <a class="card" href="https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/slides/cs224n-spr2024-lecture10-prompting-rlhf.pdf" target="_blank">
+        <div class="card-top"><span class="uni-badge" style="background:#E6F1FB;color:#0C447C">Stanford CS224N</span><span class="card-year">Spring 2024</span></div>
+        <div class="card-title">Prompting, Instruction Finetuning & RLHF</div>
+        <div class="card-desc">In-context learning, CoT, zero/few-shot, instruction tuning, DPO vs RLHF. Highly visual and beginner-friendly.</div>
+        <div class="card-url">cs224n-spr2024-lecture10-prompting-rlhf.pdf</div>
+      </a>
+      <a class="card" href="https://cmu-l3.github.io/anlp-spring2025/static_files/anlp-s2025-05-attention-transformers.pdf" target="_blank">
+        <div class="card-top"><span class="uni-badge" style="background:#E1F5EE;color:#085041">CMU 11-711</span><span class="card-year">Spring 2025</span></div>
+        <div class="card-title">Attention & Transformers</div>
+        <div class="card-desc">Self-attention mechanism, positional encodings, transformer architecture. Essential background for understanding how LLMs work.</div>
+        <div class="card-url">anlp-s2025-05-attention-transformers.pdf</div>
+      </a>
+      <a class="card" href="https://cmu-l3.github.io/anlp-spring2025/static_files/anlp-s2025-06-pretraining.pdf" target="_blank">
+        <div class="card-top"><span class="uni-badge" style="background:#E1F5EE;color:#085041">CMU 11-711</span><span class="card-year">Spring 2025</span></div>
+        <div class="card-title">Pretraining — BERT, GPT, LLaMA</div>
+        <div class="card-desc">How foundation models are trained. BERT masked LM, GPT autoregressive, scaling laws. Directly explains the LLMs your demos use.</div>
+        <div class="card-url">anlp-s2025-06-pretraining.pdf</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SESSION 2 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="session-num" style="background:#1D9E75">02</div>
+      <div>
+        <div class="section-title">Session 2 — Tool Use, Memory & Agent Orchestration</div>
+        <div class="section-sub">11:15 AM–12:45 PM · ReAct loop, LangChain</div>
+      </div>
+    </div>
+    <div class="cards">
+      <a class="card" href="https://web.stanford.edu/class/cs224n/slides/cs224n-spr2024-lecture14-agents-shikhar-updated.pdf" target="_blank">
+        <div class="card-top"><span class="uni-badge" style="background:#E6F1FB;color:#0C447C">Stanford CS224N</span><span class="card-year">Spring 2024</span></div>
+        <div class="card-title">Reasoning & Agents — Shikhar Murty</div>
+        <div class="card-desc">Chain-of-thought, tool use, ReAct pattern, SWE-bench, WebGPT. One of the best agent lectures publicly available — very clear diagrams.</div>
+        <div class="card-url">cs224n-spr2024-lecture14-agents-shikhar-updated.pdf</div>
+      </a>
+      <a class="card" href="https://cmu-l3.github.io/anlp-spring2025/static_files/anlp-s2025-14-agents.pdf" target="_blank">
+        <div class="card-top"><span class="uni-badge" style="background:#E1F5EE;color:#085041">CMU 11-711</span><span class="card-year">Spring 2025 ✓ fetched</span></div>
+        <div class="card-title">Agents — LLM Agents, VLM Agents, Computer Use</div>
+        <div class="card-desc">Policy + environment framing, text/visual/computer-use agents, prompting patterns, function calling, CoT. Includes live code repo links.</div>
+        <div class="card-url">anlp-s2025-14-agents.pdf</div>
+      </a>
+      <a class="card" href="https://cmu-l3.github.io/anlp-spring2025/static_files/anlp-s2025-07-decoding.pdf" target="_blank">
+        <div class="card-top"><span class="uni-badge" style="background:#E1F5EE;color:#085041">CMU 11-711</span><span class="card-year">Spring 2025</span></div>
+        <div class="card-title">Decoding & Generation Algorithms</div>
+        <div class="card-desc">Greedy, beam search, temperature sampling, top-k/top-p. Explains the "how" behind LLM generation — great for answering student questions.</div>
+        <div class="card-url">anlp-s2025-07-decoding.pdf</div>
+      </a>
+      <a class="card" href="https://web.stanford.edu/class/cs224g/schedule.html" target="_blank">
+        <div class="card-top"><span class="uni-badge" style="background:#E6F1FB;color:#0C447C">Stanford CS224G</span><span class="card-year">2025</span></div>
+        <div class="card-title">Building & Scaling LLM Applications</div>
+        <div class="card-desc">Context engineering, RAG architecture, memory systems, agent architectures (ReAct, LangGraph, CrewAI), tool use, agent safety. Applied focus.</div>
+        <div class="card-url">web.stanford.edu/class/cs224g/schedule.html</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SESSION 3 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="session-num" style="background:#5DCAA5">03</div>
+      <div>
+        <div class="section-title">Session 3 — Capstone & FastAPI Deployment</div>
+        <div class="section-sub">1:45–3:15 PM · Research agent + hallucination control</div>
+      </div>
+    </div>
+    <div class="cards">
+      <a class="card" href="https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture13-reasoning-part2.pdf" target="_blank">
+        <div class="card-top"><span class="uni-badge" style="background:#E6F1FB;color:#0C447C">Stanford CS224N</span><span class="card-year">Winter 2026 🆕</span></div>
+        <div class="card-title">Reasoning Part 2 — Agentic Loops, RAG, SQL Gen</div>
+        <div class="card-desc">The most recent Stanford lecture (2026). Covers speculative decoding, agentic loops, RAG in production, hallucination, inference efficiency.</div>
+        <div class="card-url">cs224n-2026-lecture13-reasoning-part2.pdf</div>
+      </a>
+      <a class="card" href="https://web.stanford.edu/class/cs224n/slides_w26/cs224n-2026-lecture08-posttraining.pdf" target="_blank">
+        <div class="card-top"><span class="uni-badge" style="background:#E6F1FB;color:#0C447C">Stanford CS224N</span><span class="card-year">Winter 2026 🆕</span></div>
+        <div class="card-title">Post-Training — RLHF, DPO, Alignment</div>
+        <div class="card-desc">How models are safety-trained and aligned after pretraining. Relevant to guardrails discussion in your capstone session.</div>
+        <div class="card-url">cs224n-2026-lecture08-posttraining.pdf</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SESSION 4 -->
+  <div class="section">
+    <div class="section-header">
+      <div class="session-num" style="background:#9FE1CB; color:#085041 !important">04</div>
+      <div>
+        <div class="section-title">Session 4 — Real-World Use Cases & Guardrails</div>
+        <div class="section-sub">3:30–5:00 PM · Legal, Healthcare, SaaS copilots</div>
+      </div>
+    </div>
+    <div class="cards">
+      <a class="card" href="https://web.stanford.edu/class/cs224n/slides_w25/cs224n-2025-guest-lecture-interpretability.pdf" target="_blank">
+        <div class="card-top"><span class="uni-badge" style="background:#E6F1FB;color:#0C447C">Stanford CS224N</span><span class="card-year">Winter 2025</span></div>
+        <div class="card-title">Model Analysis & Interpretability (XAI)</div>
+        <div class="card-desc">Bias, robustness, adversarial examples, probing classifiers. Covers why models fail and how to explain outputs — key for responsible AI discussion.</div>
+        <div class="card-url">cs224n-2025-guest-lecture-interpretability.pdf</div>
+      </a>
+      <a class="card" href="https://web.stanford.edu/class/cs224n/slides/cs224n-spr2024-lecture14-agents-shikhar-updated.pdf" target="_blank">
+        <div class="card-top"><span class="uni-badge" style="background:#E6F1FB;color:#0C447C">Stanford CS224N</span><span class="card-year">Spring 2024</span></div>
+        <div class="card-title">Agents — Real-World Deployments</div>
+        <div class="card-desc">SWE-agent (software engineering), WebGPT (legal/research), WebShop (e-commerce). Maps directly to your Legal AI, SaaS copilot demos.</div>
+        <div class="card-url">cs224n-spr2024-lecture14-agents-shikhar-updated.pdf</div>
+      </a>
+      <a class="card" href="https://cmu-l3.github.io/anlp-spring2025/static_files/anlp-s2025-02-wordrep-textclass.pdf" target="_blank">
+        <div class="card-top"><span class="uni-badge" style="background:#E1F5EE;color:#085041">CMU 11-711</span><span class="card-year">Spring 2025</span></div>
+        <div class="card-title">Word Representations & Text Classification</div>
+        <div class="card-desc">How NLP classifies text — foundational for explaining sentiment analysis, intent detection, and your healthcare triage guardrail logic.</div>
+        <div class="card-url">anlp-s2025-02-wordrep-textclass.pdf</div>
+      </a>
+      <a class="card" href="https://llm-class.github.io/slides/Lecture%201%20-%20Introduction%20and%20Course%20Overview.pdf" target="_blank">
+        <div class="card-top"><span class="uni-badge" style="background:#FAEEDA;color:#633806">UC Berkeley</span><span class="card-year">2024</span></div>
+        <div class="card-title">LLM Course Intro — Turing Test to GPT-4</div>
+        <div class="card-desc">Adapted from Stanford CS25. Historical sweep from Turing 1950 → ELIZA MIT → GPT-4 → Claude. Great visual opener for any NLP audience.</div>
+        <div class="card-url">llm-class.github.io — Lecture 1</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <h2 class="cheat-heading">Quick-pull cheat sheet for tomorrow</h2>
+  <table class="cheat-table">
+    <thead>
+      <tr><th>Session moment</th><th>Best slide to pull up</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>"What is an agent?"</td><td>CMU Agents (fetched ✓) — Policy + Environment diagram</td></tr>
+      <tr><td>"How does prompting work?"</td><td>Stanford CS224N Lec 10 — Zero/Few-shot visual</td></tr>
+      <tr><td>"How does RAG work?"</td><td>Stanford CS224N Lec 13 (2026) — Pipeline flow</td></tr>
+      <tr><td>"What is the ReAct loop?"</td><td>Stanford CS224N Lec 14 — Shikhar's diagram</td></tr>
+      <tr><td>"Why do LLMs hallucinate?"</td><td>CMU Agents deck — VLM/text agent tradeoffs section</td></tr>
+      <tr><td>"Show me real-world examples"</td><td>Stanford CS224N Lec 14 — SWE-agent, WebGPT, WebShop</td></tr>
+      <tr><td>"How are models aligned safely?"</td><td>Stanford Lec 08 (2026) — Post-training / RLHF</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <strong>How to use these tomorrow:</strong> All PDFs open directly in browser — bookmark on your phone as backup slides. When a student asks a deep question (e.g. "how does attention work?"), pull up CMU Lecture 5 or Stanford Lecture 8 on the projector. Cite as "From CMU 11-711 / Stanford CS224N — freely available at [url]."
+  </div>
+
+</div>
+</body>
+</html>
